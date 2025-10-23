@@ -16,7 +16,7 @@ bench = [
     "corner",
     "pyro-ppl",
     "emcee",
-    ""matplotlib",
+    "matplotlib",
     "tensorflow_probability[tf]",
     "tensorflow_datasets",
 ]
