@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torchmc"
+version = "0.0.0"
+dependencies = [
+    "torch",
+    "numpy",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+bench = [
+    "corner",
+    "pyro-ppl",
+    "emcee",
+    ""matplotlib",
+    "tensorflow_probability[tf]",
+    "tensorflow_datasets",
+]
+
+[tool.setuptools.packages.find]
+where = [ ".",]
+namespaces = false

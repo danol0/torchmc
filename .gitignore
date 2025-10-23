@@ -1,0 +1,5 @@
+notebooks/
+*.code-workspace
+.ruff_cache/
+*.egg-info/
+*.pyc
