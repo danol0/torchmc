@@ -5,7 +5,7 @@ from typing import Callable, Tuple
 import torch
 
 from torchmc.integrator import leapfrog
-from torchmc.adaption import ChEESAdaption
+from torchmc.adaptation import ChEESAdaption
 from tqdm.auto import trange
 
 
