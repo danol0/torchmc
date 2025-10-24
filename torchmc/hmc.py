@@ -5,7 +5,7 @@ from typing import Callable, Tuple
 import torch
 
 from torchmc.integrator import leapfrog
-from torchmc.adaptation import ChEESAdaption
+from torchmc.adaptation import ChEESadaptation
 from tqdm.auto import trange
 
 
@@ -38,7 +38,7 @@ class HMC:
 
         self.set_initial_step_size(initial_state)
         self.trajectory_length = self.step_size
-        self.adaptor = ChEESAdaption(initial_step_size=self.step_size)
+        self.adaptor = ChEESadaptation(initial_step_size=self.step_size)
 
     def hamiltonian(
         self, position: torch.Tensor, momentum: torch.Tensor

@@ -71,7 +71,7 @@ class DualAveraging:
         return new_value
 
 
-class ChEESAdaption:
+class ChEESadaptation:
     """Source: http://proceedings.mlr.press/v130/hoffman21a/hoffman21a.pdf"""
 
     def __init__(
